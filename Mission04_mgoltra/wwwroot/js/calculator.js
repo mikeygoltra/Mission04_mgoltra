@@ -53,5 +53,6 @@
 
     // output
     $('#test').html("Final grade: " + finalGrade + '<br />Letter grade: ' + letterGrade);
+    
 
 })

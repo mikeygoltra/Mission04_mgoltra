@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <!-- boot strap css-->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- my css-->
+    <link href="~/css/default.css" rel="stylesheet" />
+    <!-- title -->
+    <title>@ViewData["Title"]</title>
+    <!-- icon image-->
+    <link rel="icon" href="images/Carolina-Panthers-Logo-1995-2011.png" />
+</head>
+<body>
+
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="gradeCalculator">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>This is the footer</footer>
+
+    <!-- bootstrap js-->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jquery-->
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <!-- my js file-->
+    <script src="~/js/calculator.js"></script>
+</body>
+</html>
